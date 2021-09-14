@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập A
+<input type="text" id="nhapvao1">
+<br>
+<br>
+Nhập B
+<input type="text" id="nhapvao2">
+<br>
+<button onclick="anvao()">click</button>
+<button onclick="anvao2()">click 2</button>
+<p id="result">ket qua</p>
+</body>
+</html>
+<script>
+    function anvao() {
+        let a = document.getElementById('nhapvao1').value;
+        let b = document.getElementById('nhapvao2').value;
+        let c = a ** 2
+
+        document.getElementById('result').innerHTML = c
+    }
+    function anvao2() {
+        let a = document.getElementById('nhapvao1').value;
+        let b = document.getElementById('nhapvao2').value;
+        let d = a ** b
+        document.getElementById('result').innerHTML = d
+
+    }
+</script>
